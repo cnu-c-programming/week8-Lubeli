@@ -10,7 +10,7 @@ int main(){
 
     for(int i = n-1; i>0; i--){
         for(int j = 0; j<i; j++){
-            if(strcmp(names[j], names[j+1]) == 1){
+            if(strcmp(names[j], names[j+1])>=0){
                 temp = names[j+1];
                 names[j+1] = names[j];
                 names[j] = temp;
